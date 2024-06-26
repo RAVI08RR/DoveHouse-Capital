@@ -1,0 +1,77 @@
+.leadership-container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+.leadership-image-div {
+    height: calc(100vh - var(--header-height));
+    margin-top: var(--header-height);
+    width: 100%;
+    position: relative;
+
+}
+
+.leadership-bg {
+
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+
+
+.leadership-heading {
+    font-family: Wensley;
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--header-font-size);
+    /* 305.556% */
+    /* identical to box height, or 306% */
+    letter-spacing: -0.08em;
+
+    color: #203468;
+
+
+}
+
+.leadership-title {
+    /* leading investment firm. */
+
+
+
+    font-family: Wensley;
+    font-size: var(--header-font-size);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    line-height: var(--header-font-size);
+    /* 100% */
+    letter-spacing: -8.8px;
+    color: #203468;
+    text-transform: uppercase;
+
+}
+
+.leadership-desc {
+
+    /* Our leadership team brings unique expertise and successful track records from globally recognised financial institutions companies. They have worked together for over three decades, providing the foundation from which to build Dovehouse Capital into an industry-leading investment firm. */
+
+
+    color: #323131;
+    font-family: "Cera Pro";
+    font-size: var(--font-size-small);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    line-height: 27px;
+    /* 150% */
+    width: 649.701px;
+
+
+}

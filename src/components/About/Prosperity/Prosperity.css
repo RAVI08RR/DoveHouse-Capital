@@ -1,0 +1,72 @@
+.prosperity {
+  background-image: url("../../../assets/images/Prosperity.png");
+  font-family: "Wensley", sans-serif;
+}
+
+/* .content-wrapper {
+  width: 50%;
+} */
+
+.content-wrapper {
+  text-align: end;
+}
+.main-title-prospertiy {
+  font-size: 65px;
+  font-weight: 400 !important;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: "Wensley";
+  line-height: 1.2;
+  text-align: end;
+}
+
+.highlight {
+  color: #203468;
+  font-family: Wensley;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 105px;
+  letter-spacing: -5.5px;
+  text-transform: capitalize;
+}
+
+.text-bg-content {
+  margin: auto;
+  display: flex;
+  width: 75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+p.description {
+  color: #fff;
+  text-align: right;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  padding-left: 47rem;
+}
+
+.prosperity {
+  background-color: #39c4f2;
+  color: white;
+  font-family: "Wensley", sans-serif;
+  padding: 7rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+  height: 604px;
+}
+
+@media (max-width: 768px) {
+  .main-title-prospertiy {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+}

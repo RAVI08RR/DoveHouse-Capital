@@ -1,0 +1,386 @@
+.text-white {
+  color: #fff
+}
+
+
+.text-grey {
+  color: #F9F9F9;
+
+}
+
+.paragraph-gap {
+  margin-bottom: var(--paragraph-gap);
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: rgb(162 151 129);
+  transform-origin: 0%;
+  z-index: 21;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .home-container {
+    scroll-snap-type: none;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  .mobile-view-div {
+    scroll-snap-type: none;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    padding-top: var(--header-height);
+
+  }
+
+
+  .about-container {
+    background: #eaf5fd;
+    padding-top: 12rem !important;
+    padding: 12rem 1rem;
+  }
+
+  .about-content {
+    padding: 0 1rem !important;
+  }
+
+
+
+  .about-bg {
+    padding: 10px
+  }
+
+  .culture-container-content {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .culture-title {
+    text-align: center !important;
+  }
+
+  .leadership-bg {
+    padding: 0 1rem !important;
+    position: relative;
+  }
+
+  .leadership-desc {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+
+  .culture-desc {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+
+  .investment-desc {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+
+
+  .culture-image-div {
+    width: 100% !important;
+  }
+
+  .progress-bar {
+    display: none;
+  }
+
+  .sidemenu-container .menu-item {
+    padding-left: 1rem;
+  }
+
+  .sidemenu-container .copywrite-text {
+    padding-left: 1rem;
+
+  }
+
+  .culture-container-snap-wrapper {
+    height: unset !important;
+  }
+
+
+
+}
+
+
+
+
+/* 
+  ##Device = Desktop large
+  ##Screen = 1441px to higher resolution desktops
+*/
+@media (min-width: 1441px) {
+
+  :root {
+    --paragraph-gap: 1.875rem;
+    --header-height: 6.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 10.188rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 6.875rem;
+
+    --font-size-small: 1.125rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 1rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 47.875rem;
+    --about-us-counter-div-height: 200px;
+  }
+
+}
+
+/* 
+  ##Device = Desktops small
+  ##Screen = B/w 1281px to 1441px
+*/
+
+@media (min-width: 1281px) and (max-width: 1441px) {
+
+  :root {
+    --paragraph-gap: 0.875rem;
+    --header-height: 6.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 5.671rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 5.156rem;
+
+    --font-size-small: 0.844rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 0.75rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 47.875rem;
+    --about-us-counter-div-height: 150px;
+  }
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+  :root {
+    --paragraph-gap: 0.875rem;
+    --header-height: 6.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 5.671rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 5.156rem;
+
+    --font-size-small: 0.844rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 0.75rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 47.875rem;
+    --about-us-counter-div-height: 150px;
+  }
+
+
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+  :root {
+    --paragraph-gap: 0.875rem;
+    --header-height: 6.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 5.671rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 5.156rem;
+
+    --font-size-small: 0.844rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 0.75rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 47.875rem;
+    --about-us-counter-div-height: 150px;
+  }
+
+
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+  :root {
+    --paragraph-gap: 0.875rem;
+    --header-height: 6.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 5.671rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 5.156rem;
+
+    --font-size-small: 0.844rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 0.75rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 47.875rem;
+    --about-us-counter-div-height: 150px;
+  }
+
+
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+  :root {
+    --paragraph-gap: 0.875rem;
+    --header-height: 6.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 5.671rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 5.156rem;
+
+    --font-size-small: 0.844rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 0.75rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 90%;
+    --about-us-counter-div-height: 150px;
+  }
+
+
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+  :root {
+    --paragraph-gap: 0.875rem;
+    --header-height: 4.875rem;
+    --white: #ffffff;
+    --logo-top-gap: 20px;
+    --logo-top-gap-home: 70px;
+    --logo-height: 65px;
+    --logo-main-height: 12vw;
+    --side-margin: 0.671rem;
+    --title-font-size: 2.25rem;
+    --title-font-weight: 400;
+
+
+    --header-font-size: 3.156rem;
+
+    --font-size-small: 0.844rem;
+
+
+    --anchor-link-font-weight: 500;
+    --anchor-link-font-size: 0.75rem;
+    --anchor-link-line-height: 0.875rem;
+    --side-drawer-width: 90%;
+    --about-us-counter-div-height: 150px;
+  }
+
+
+
+}
+
+
+
+
+/* 
+::-webkit-scrollbar {
+  width: 20px;
+  background-color: #F5F5F5;
+} */
+
+
+@font-face {
+  font-family: 'Wensley';
+  src: url('assets/fonts/WensleyDemo/WensleyDemo.ttf');
+  font-weight: 300;
+  font-style: normal;
+}

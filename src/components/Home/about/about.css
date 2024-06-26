@@ -1,0 +1,139 @@
+.about-container {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    padding-top: var(--header-height);
+    position: relative;
+}
+
+.about-bg {
+    /* background-image: url("assets/about_bg.svg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-blend-mode: multiply; */
+    background-position: center;
+    background-color: #eaf6fd;
+    min-height: calc(100vh - var(--header-height));
+    padding-top: 62px;
+    padding-left: 52px;
+    position: absolute;
+    width: 100%;
+}
+
+.about-content-wrapper {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - var(--header-height));
+    align-items: center;
+}
+
+.default-counter-size {
+    min-height: var(--about-us-counter-div-height);
+}
+
+.about-content {
+    /* padding-top: 62px; */
+    padding-left: 52px;
+    position: absolute;
+    width: 100%;
+}
+
+.about-title {
+    font-family: "Wensley";
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    text-align: left;
+    text-transform: uppercase;
+
+    color: #203468;
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    line-height: 14px;
+}
+
+.about-subtitle {
+
+
+    color: #3B3B3B;
+    font-family: "Cera Pro";
+    font-size: var(--font-size-small);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    line-height: 26px;
+    /* 144.444% */
+    text-transform: capitalize;
+
+
+
+}
+
+.about-learn-more {
+    display: block;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: var(--anchor-link-font-weight);
+    font-size: var(--anchor-link-font-size);
+    line-height: 14px;
+    /* identical to box height, or 88% */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: #203468;
+
+
+}
+
+.about-learn-more {
+    display: block;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: var(--anchor-link-font-weight);
+    font-size: var(--anchor-link-font-size);
+    line-height: 14px;
+    /* identical to box height, or 88% */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+    color: #203468;
+
+
+}
+
+.counter-div {
+    width: 100%;
+    height: var(--about-us-counter-div-height);
+}
+
+.border-dark {
+    border-color: #B7B7B7;
+}
+
+.counter-title {
+
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--font-size-small);
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #203468;
+    display: block;
+    text-align: center;
+
+}
+
+.counter-value {
+
+    font-family: 'Wensley';
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--header-font-size);
+    /* or 20% */
+    text-transform: capitalize;
+    display: block;
+
+    color: #33B9EA;
+    text-align: center;
+
+
+
+}

@@ -1,0 +1,37 @@
+.counter-div {
+    width: 100%;
+    height: var(--about-us-counter-div-height);
+    border-color: #B7B7B7;
+
+}
+
+.counter-title {
+
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--font-size-small);
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #203468;
+    display: block;
+    text-align: center;
+
+}
+
+.counter-value {
+
+    font-family: 'Wensley';
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--header-font-size);
+    /* or 20% */
+    text-transform: capitalize;
+    display: block;
+
+    color: #33B9EA;
+    text-align: center;
+
+
+
+}

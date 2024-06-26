@@ -1,0 +1,102 @@
+.culture-container-snap-wrapper {
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+
+}
+
+
+.culture-container-snap-wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+.culture-container-wrapper {
+    scroll-snap-align: start;
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+    height: 100vh;
+}
+
+.culture-container {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    padding-top: calc(var(--header-height) + (var(--side-margin) / 2));
+
+
+
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.culture-image-div {
+    height: 100%;
+    width: 66%;
+
+    position: relative;
+}
+
+.culture-bg {
+    /* background-image: url("assets/culture_img.svg"); */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+
+.bg-cyan {
+    color: #33B9EA;
+}
+
+
+.culture-title {
+
+    font-family: 'Wensley';
+    color: #203468;
+    text-align: right;
+    font-size: var(--header-font-size);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    line-height: var(--header-font-size);
+    letter-spacing: -8.8px;
+    text-transform: uppercase;
+
+}
+
+.culture-desc {
+    color: #3B3B3B;
+    font-family: "Cera Pro";
+    font-size: var(--font-size-small);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    line-height: 22px;
+    /* 122.222% */
+    text-transform: capitalize;
+    width: 739px;
+
+}
+
+.culture-learn-more {
+    margin-bottom: 116px;
+    color: #203468;
+    font-family: "Cera Pro";
+    font-size: var(--anchor-link-font-size);
+    font-style: normal;
+    font-weight: var(--anchor-link-font-weight);
+    line-height: 14px;
+    /* 87.5% */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+
+}
+
+.culture-container-content {
+    display: flex;
+    gap: 81px;
+    justify-content: center;
+    padding-bottom: 116px;
+    scroll-snap-align: end;
+
+}

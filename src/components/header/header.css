@@ -1,0 +1,24 @@
+.header-container {
+    width: 100%;
+    background: #fff;
+    height: var(--header-height);
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.header-logo {
+    width: 395px;
+    height: 86px;
+
+}
+
+.header-menu-icon {
+    position: absolute;
+    left: 72px;
+}

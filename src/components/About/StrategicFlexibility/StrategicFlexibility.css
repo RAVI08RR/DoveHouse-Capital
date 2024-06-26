@@ -1,0 +1,76 @@
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.lead {
+  font-size: 1rem;
+  color: #333;
+}
+
+.div-box-container {
+  display: flex;
+  gap: 23px;
+}
+.stragic-section-bg {
+  background-image: url("../../../assets/images/stragic-bg.png");
+  background-repeat: no-repeat;
+}
+
+.stragic-section-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0px;
+}
+.strategic-heading {
+  text-align: left;
+  color: #203468;
+  font-family: "Wensley", sans-serif;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 102px;
+  letter-spacing: -4.5px;
+}
+.stragic-section-bg h2 {
+  color: #333;
+  font-family: "Wensley", sans-serif;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: -2.16px;
+  text-align: left;
+}
+
+.box.stragicFlex-box {
+  width: 174px;
+  height: 162px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+}
+.stragicFlex-box p {
+  color: #3b3b3b;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.lead {
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  padding-bottom: 1rem;
+}

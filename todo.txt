@@ -1,0 +1,44 @@
+1. add anchor link wh
+
+2. logo is blur 
+
+3. add header ()
+
+4. about , check horizontal scroll
+
+5. investment approach 
+   line height and gap fix
+
+6. regular scroll in mobile 
+
+7. mobile and 
+
+
+
+
+
+1. logo blur - not able to reproduce, need more clarity
+
+2. bg blur - done 
+
+3. home descrption color - done 
+
+4. reduce size of logo - done
+
+4. reduce border line height of about us counters - done 
+
+5. preload all images,  loading issue -  done 
+
+6. investment title not animating -  done 
+
+8. top gap for culture screen -  done 
+
+9. mobile view should scroll - done 
+
+10. animation in collab screen - done
+
+
+
+11. Add scroll - done 
+
+

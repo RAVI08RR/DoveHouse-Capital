@@ -1,0 +1,74 @@
+.investment-mastery {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  padding-right: 0;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  left: 55px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  left: 9rem;
+  font-family: "Wensley";
+  top: 9rem;
+}
+
+.image-overlay h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Wensley;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: -2.16px;
+}
+
+.text-container {
+  background-color: #002060;
+  background-image: url("../../../assets/images/investment-blue-bg.png");
+  display: flex;
+  align-items: center;
+  padding: 11rem;
+  height: 650px;
+}
+
+.text-wrapper {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .image-container,
+  .text-container {
+    padding: 1rem;
+  }
+
+  .image-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-wrapper {
+    font-size: 0.9rem;
+  }
+}
