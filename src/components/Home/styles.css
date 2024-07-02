@@ -491,6 +491,34 @@ section.sec-content {
 }
 
 @media screen and (max-width: 425px) {
+
+
+
+  .main-leadership {
+    height: 227px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .prosperity-section .text-bg-content {
+    margin: auto;
+    display: flex;
+    width: 25rem !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .highlight {
+    color: #203468;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px !important;
+    letter-spacing: normal !important;
+    font-family: "Wensley", sans-serif;
+    text-transform: capitalize;
+  }
+
   #logo {
     height: 12vw;
   }
@@ -544,3 +572,5 @@ section.sec-content.active-section {
   z-index: 20;
   opacity: 1;
 }
+
+

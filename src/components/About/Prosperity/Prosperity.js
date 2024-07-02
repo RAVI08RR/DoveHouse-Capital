@@ -8,7 +8,7 @@ const Prosperity = () => {
       className="prosperity"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, delay: 0.4 }}
+      transition={{ duration: 0.8, delay: 0.7 }}
     >
       <div className="container-fluid">
         <div className="row justify-content-center">
@@ -20,19 +20,21 @@ const Prosperity = () => {
                   className="main-title-prospertiy"
                   initial={{ opacity: 0, x: -100 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
                 >
                   DOVEHOUSE CAPITAL
                   <br />
                   PARTNERING FOR
                   <br />
-                  <span className="highlight">PROSPERITY</span>
+                  <span className="highlight " style={{ color: "#203468" }}>
+                    PROSPERITY
+                  </span>
                 </motion.h1>
                 <motion.p
                   className="description"
                   initial={{ opacity: 0, x: -100 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.8, delay: 0.8 }}
+                  transition={{ duration: 0.8, delay: 0.9 }}
                 >
                   Dovehouse Capital was founded with the objective of forging
                   enduring, prosperous partnerships with our investors. Our

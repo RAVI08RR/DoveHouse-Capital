@@ -52,14 +52,16 @@ import About from "./components/About/About";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import SideMenu from "./components/SideMenu/SideMenu"; // Assuming the path is correct
+import InvesmentLeadership from "./components/InvesmentPage/InvesmentLeadership";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LeadershipComponent from "components/Leadershippage/LeadershipComponent";
 
 const sideMenu = [
   { name: "HOME", url: "/" },
   { name: "About Us", url: "/about-us" },
-  { name: "Investment", url: "#" },
-  { name: "Leadership", url: "#" },
+  { name: "Investment", url: "/investment" },
+  { name: "Leadership", url: "/leadership" },
   { name: "Contact", url: "#" },
   // Add other menu items as needed
 ];
@@ -100,6 +102,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home toggleDrawer={toggleDrawer} />} />
         <Route path="/about-us" element={<About />} />
+        <Route path="/investment" element={<InvesmentLeadership />} />
+
+        <Route path="/leadership" element={<LeadershipComponent />} />
         {/* Add more routes for other components */}
       </Routes>
 

@@ -1,0 +1,256 @@
+.investment-page {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  color: #1a3b5d;
+  font-size: 48px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+header p {
+  color: #666;
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #00b8d4;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h2 {
+  color: #1a3b5d;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  color: #666;
+  font-size: 14px;
+}
+
+.principles {
+  text-align: center;
+}
+
+.principles h2 {
+  color: #1a3b5d;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.principle-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.principle-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.principle-card.highlight {
+  background-color: #1a3b5d;
+  color: #ffffff;
+}
+
+.principle-card i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.principle-card p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Icons (you'll need to replace these with actual icons or images) */
+.icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #e0e0e0;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.trend-following {
+  background-color: #ff9800;
+}
+.portfolio-construction {
+  background-color: #4caf50;
+}
+.risk-mitigation {
+  background-color: #2196f3;
+}
+.transparency {
+  background-color: #9c27b0;
+}
+
+@media screen and (max-width: 425px) {
+  .main-leadership {
+    height: 500px !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main-title {
+    font-size: 2.2rem !important;
+    font-weight: 400 !important;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-family: "Wensley", sans-serif;
+    line-height: 1.2;
+  }
+
+  section.about-us.investment-Leadership {
+    padding-bottom: 0px !important;
+  }
+  .main-container-section-in {
+    margin: 0px 0px 0px 0px !important;
+    overflow: hidden;
+    /* margin-top: -13rem !important; */
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+  .main-container-section-in {
+    margin: 0px 0px 0px 75px !important;
+    overflow: hidden;
+    /* margin-top: -13rem !important; */
+  }
+
+  .main-leadership {
+    height: 700px !important;
+  }
+}
+
+h2.leadership-card-heading.text-white {
+  color: #203468 !important;
+  font-family: "Cera Pro", sans-serif !important;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 73px;
+  letter-spacing: -5px;
+}
+
+.card.leadership-card {
+  width: 22rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.leadership-card p {
+  color: #434343;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.card.leadership-card {
+  width: 22rem;
+  text-align: center;
+  padding-bottom: 3rem;
+  background-color: transparent;
+  border: none;
+}
+
+.principal-sections h2 {
+  color: #203468;
+  font-family: "Wensley", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 20px;
+  line-height: 65px;
+  letter-spacing: -2.5px;
+}
+
+.card.principal-card.h-100.border-0.shadow {
+  background-color: transparent;
+  height: 364px;
+  border-radius: 0px;
+  padding: 80px 20px;
+  flex-shrink: 0;
+  /* width: 375px; */
+  height: 364px;
+  flex-shrink: 0;
+}
+.principle-card,
+.card-body {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section.container.principal-sections {
+  margin-top: 3rem;
+}
+
+/* CSS for card container */
+/* CSS for hovering effect */
+
+.card.principal-card.h-100.border-0.shadow:hover {
+  background: #203468; /* Change background color on hover */
+}
+
+.principal-card:hover .card-body img {
+  filter: brightness(0) invert(1); /* invert color of the image to white */
+}
+
+.card.principal-card.h-100.border-0.shadow:hover .card-body .card-title {
+  color: white !important; /* change text color to white */
+}
+
+/* Optional: Add transition for smooth effect */
+.principal-card .card-body img,
+.principal-card .card-title {
+  transition: color 0.3s ease, filter 0.3s ease;
+}
+
+p.invest-mastery-description.aos-init.aos-animate {
+  color: #fff;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}

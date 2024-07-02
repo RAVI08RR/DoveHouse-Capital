@@ -1,11 +1,381 @@
-.text-white {
-  color: #fff
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-Light.eot");
+  src: local("Cera Pro Light"), local("./assets/fonts/CeraPro/CeraPro-Light"),
+    url("./assets/fonts/CeraPro/CeraPro-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-Light.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-Light.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-MediumItalic.eot");
+  src: local("Cera Pro Medium Italic"),
+    local("./assets/fonts/CeraPro/CeraPro-MediumItalic"),
+    url("./assets/fonts/CeraPro/CeraPro-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-MediumItalic.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-RegularItalic.eot");
+  src: local("Cera Pro Regular Italic"),
+    local("./assets/fonts/CeraPro/CeraPro-RegularItalic"),
+    url("./assets/fonts/CeraPro/CeraPro-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-RegularItalic.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-RegularItalic.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-BlackItalic.eot");
+  src: local("Cera Pro Black Italic"),
+    local("./assets/fonts/CeraPro/CeraPro-BlackItalic"),
+    url("./assets/fonts/CeraPro/CeraPro-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-BlackItalic.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-BlackItalic.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-Medium.eot");
+  src: local("Cera Pro Medium"), local("./assets/fonts/CeraPro/CeraPro-Medium"),
+    url("./assets/fonts/CeraPro/CeraPro-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-Medium.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-Medium.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-BoldItalic.eot");
+  src: local("Cera Pro Bold Italic"),
+    local("./assets/fonts/CeraPro/CeraPro-BoldItalic"),
+    url("./assets/fonts/CeraPro/CeraPro-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-BoldItalic.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-ThinItalic.eot");
+  src: local("Cera Pro Thin Italic"),
+    local("./assets/fonts/CeraPro/CeraPro-ThinItalic"),
+    url("./assets/fonts/CeraPro/CeraPro-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-ThinItalic.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-ThinItalic.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-LightItalic.eot");
+  src: local("Cera Pro Light Italic"),
+    local("./assets/fonts/CeraPro/CeraPro-LightItalic"),
+    url("./assets/fonts/CeraPro/CeraPro-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-LightItalic.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-LightItalic.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-Black.eot");
+  src: local("Cera Pro Black"), local("./assets/fonts/CeraPro/CeraPro-Black"),
+    url("./assets/fonts/CeraPro/CeraPro-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-Black.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-Black.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-Bold.eot");
+  src: local("Cera Pro Bold"), local("./assets/fonts/CeraPro/CeraPro-Bold"),
+    url("./assets/fonts/CeraPro/CeraPro-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-Bold.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-Bold.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-Regular.eot");
+  src: local("Cera Pro Regular"),
+    local("./assets/fonts/CeraPro/CeraPro-Regular"),
+    url("./assets/fonts/CeraPro/CeraPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-Regular.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-Regular.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./assets/fonts/CeraPro/CeraPro-Thin.eot");
+  src: local("Cera Pro Thin"), local("./assets/fonts/CeraPro/CeraPro-Thin"),
+    url("./assets/fonts/CeraPro/CeraPro-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CeraPro/CeraPro-Thin.woff2") format("woff2"),
+    url("./assets/fonts/CeraPro/CeraPro-Thin.woff") format("woff"),
+    url("./assets/fonts/CeraPro/CeraPro-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Wensley" !important;
+}
+
+/* fonts custom sizes */
+.dv-fs-10 {
+  font-size: 10px;
+}
+.dv-fs-11 {
+  font-size: 11px;
+}
+.dv-fs-12 {
+  font-size: 12px;
+}
+.dv-fs-13 {
+  font-size: 13px;
+}
+.dv-fs-14 {
+  font-size: 14px;
+}
+.dv-fs-15 {
+  font-size: 15px;
+}
+.dv-fs-16 {
+  font-size: 16px;
+}
+.dv-fs-17 {
+  font-size: 17px;
+}
+.dv-fs-18 {
+  font-size: 18px;
+}
+.dv-fs-19 {
+  font-size: 19px;
+}
+.dv-fs-20 {
+  font-size: 20px;
+}
+.dv-fs-21 {
+  font-size: 21px;
+}
+.dv-fs-22 {
+  font-size: 22px;
+}
+.dv-fs-23 {
+  font-size: 23px;
+}
+.dv-fs-24 {
+  font-size: 24px;
+}
+.dv-fs-25 {
+  font-size: 25px;
+}
+.dv-fs-26 {
+  font-size: 26px;
+}
+.dv-fs-27 {
+  font-size: 27px;
+}
+.dv-fs-28 {
+  font-size: 28px;
+}
+.dv-fs-29 {
+  font-size: 29px;
+}
+.dv-fs-30 {
+  font-size: 30px;
+}
+.dv-fs-31 {
+  font-size: 31px;
+}
+.dv-fs-32 {
+  font-size: 32px;
+}
+.dv-fs-33 {
+  font-size: 33px;
+}
+.dv-fs-34 {
+  font-size: 34px;
+}
+.dv-fs-35 {
+  font-size: 35px;
+}
+.dv-fs-36 {
+  font-size: 36px;
+}
+.dv-fs-37 {
+  font-size: 37px;
+}
+.dv-fs-38 {
+  font-size: 38px;
+}
+.dv-fs-39 {
+  font-size: 39px;
+}
+.dv-fs-40 {
+  font-size: 40px;
+}
+.dv-fs-41 {
+  font-size: 41px;
+}
+.dv-fs-42 {
+  font-size: 42px;
+}
+.dv-fs-43 {
+  font-size: 43px;
+}
+.dv-fs-44 {
+  font-size: 44px;
+}
+.dv-fs-45 {
+  font-size: 45px;
+}
+.dv-fs-46 {
+  font-size: 46px;
+}
+.dv-fs-47 {
+  font-size: 47px;
+}
+.dv-fs-48 {
+  font-size: 48px;
+}
+.dv-fs-49 {
+  font-size: 49px;
+}
+.dv-fs-50 {
+  font-size: 50px;
+}
+.dv-fs-51 {
+  font-size: 51px;
+}
+.dv-fs-52 {
+  font-size: 52px;
+}
+.dv-fs-53 {
+  font-size: 53px;
+}
+.dv-fs-54 {
+  font-size: 54px;
+}
+.dv-fs-55 {
+  font-size: 55px;
+}
+
+.dv-fs-70 {
+  font-size: 70px;
+}
+.dv-fs-56 {
+  font-size: 56px;
+}
+.dv-fs-57 {
+  font-size: 57px;
+}
+.dv-fs-58 {
+  font-size: 58px;
+}
+.dv-fs-59 {
+  font-size: 59px;
+}
+.dv-fs-60 {
+  font-size: 60px;
+}
+.dv-text-uppercase {
+  text-transform: uppercase;
+}
+.dv-text-primary {
+  color: #33b9ea !important;
+}
+
+.dss-fw-100 {
+  font-weight: 100 !important;
+}
+.dss-fw-200 {
+  font-weight: 200 !important;
+}
+.dss-fw-300 {
+  font-weight: 300 !important;
+}
+.dss-fw-400 {
+  font-weight: 400 !important;
+}
+.dss-fw-500 {
+  font-weight: 500 !important;
+}
+.dss-fw-600 {
+  font-weight: 600 !important;
+}
+.dss-fw-700 {
+  font-weight: 700 !important;
+}
+.dss-fw-800 {
+  font-weight: 800 !important;
+}
+.dss-fw-900 {
+  font-weight: 900 !important;
+}
+
+/* end  */
+
+.text-white {
+  color: #fff;
+}
 
 .text-grey {
-  color: #F9F9F9;
-
+  color: #f9f9f9;
 }
 
 .paragraph-gap {
@@ -22,14 +392,110 @@
   z-index: 21;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .home-container {
     scroll-snap-type: none;
     width: 100%;
     height: 100vh;
     overflow: auto;
+  }
+  .content-wrapper {
+    text-align: start !important;
+    padding: 20px;
+  }
+  .main-title {
+    color: #2c3e50;
+    font-family: Wensley, sans-serif;
+    font-size: 34px !important;
+    font-weight: 400 !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .principal-sections h2 {
+    color: #203468;
+    font-family: Wensley, sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    line-height: 46px;
+    padding-bottom: 20px;
+  }
+
+  .header-container {
+    width: 100%;
+    background: #fff;
+    height: var(--header-height);
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    gap: 22px;
+  }
+  .dv-md-fs-25 {
+    font-size: 25px !important;
+  }
+
+  .main-leadership {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px !important;
+  }
+
+  .card-overlay h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    line-height: 40px !important;
+  }
+
+  .card-overlay p {
+    margin: 5px 0;
+    color: #fff;
+    font-family: "Cera Pro";
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px !important;
+    text-align: left;
+  }
+
+  .card-counter {
+    padding-top: 4rem !important;
+  }
+
+  .p {
+    color: #3b3b3b;
+    font-family: "Cera Pro";
+    font-size: 14px !important;
+  }
+
+  .section-title {
+    font-size: 1rem !important;
+    color: #6c757d;
+    margin-bottom: 0rem !important;
+    text-align: center !important;
+  }
+  .proven-leadership h2 {
+    color: #203468;
+    font-family: "Wensley";
+    font-size: 33px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 27px !important;
+    letter-spacing: normal;
+    margin-top: 1rem !important;
+  }
+
+  .card-overlay {
+    padding: 31px !important;
+  }
+
+  .ml-96 {
+    margin-left: 0rem !important;
   }
 
   .mobile-view-div {
@@ -38,9 +504,7 @@
     height: 100vh;
     overflow: auto;
     padding-top: var(--header-height);
-
   }
-
 
   .about-container {
     background: #eaf5fd;
@@ -52,10 +516,8 @@
     padding: 0 1rem !important;
   }
 
-
-
   .about-bg {
-    padding: 10px
+    padding: 10px;
   }
 
   .culture-container-content {
@@ -87,7 +549,6 @@
     padding: 0 1rem;
   }
 
-
   .culture-image-div {
     width: 100% !important;
   }
@@ -102,26 +563,18 @@
 
   .sidemenu-container .copywrite-text {
     padding-left: 1rem;
-
   }
 
   .culture-container-snap-wrapper {
     height: unset !important;
   }
-
-
-
 }
-
-
-
 
 /* 
   ##Device = Desktop large
   ##Screen = 1441px to higher resolution desktops
 */
 @media (min-width: 1441px) {
-
   :root {
     --paragraph-gap: 1.875rem;
     --header-height: 6.875rem;
@@ -134,11 +587,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 6.875rem;
 
     --font-size-small: 1.125rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 1rem;
@@ -146,7 +597,6 @@
     --side-drawer-width: 47.875rem;
     --about-us-counter-div-height: 200px;
   }
-
 }
 
 /* 
@@ -155,6 +605,27 @@
 */
 
 @media (min-width: 1281px) and (max-width: 1441px) {
+  .card-overlay {
+    padding: 82px 82px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    color: #333 !important;
+    font-family: "Wensley", sans-serif !important;
+    font-size: 36px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 14px !important;
+    margin-top: 2rem !important;
+  }
+  .discription-proven-leadership {
+    padding-left: 40px;
+  }
 
   :root {
     --paragraph-gap: 0.875rem;
@@ -168,11 +639,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 5.156rem;
 
     --font-size-small: 0.844rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 0.75rem;
@@ -180,7 +649,6 @@
     --side-drawer-width: 47.875rem;
     --about-us-counter-div-height: 150px;
   }
-
 }
 
 /* 
@@ -189,8 +657,6 @@
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-
-
   :root {
     --paragraph-gap: 0.875rem;
     --header-height: 6.875rem;
@@ -203,11 +669,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 5.156rem;
 
     --font-size-small: 0.844rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 0.75rem;
@@ -215,9 +679,6 @@
     --side-drawer-width: 47.875rem;
     --about-us-counter-div-height: 150px;
   }
-
-
-
 }
 
 /* 
@@ -226,8 +687,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-
   :root {
     --paragraph-gap: 0.875rem;
     --header-height: 6.875rem;
@@ -240,11 +699,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 5.156rem;
 
     --font-size-small: 0.844rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 0.75rem;
@@ -252,9 +709,6 @@
     --side-drawer-width: 47.875rem;
     --about-us-counter-div-height: 150px;
   }
-
-
-
 }
 
 /* 
@@ -263,8 +717,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-
   :root {
     --paragraph-gap: 0.875rem;
     --header-height: 6.875rem;
@@ -277,11 +729,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 5.156rem;
 
     --font-size-small: 0.844rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 0.75rem;
@@ -289,9 +739,6 @@
     --side-drawer-width: 47.875rem;
     --about-us-counter-div-height: 150px;
   }
-
-
-
 }
 
 /* 
@@ -300,8 +747,6 @@
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-
-
   :root {
     --paragraph-gap: 0.875rem;
     --header-height: 6.875rem;
@@ -314,11 +759,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 5.156rem;
 
     --font-size-small: 0.844rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 0.75rem;
@@ -326,9 +769,6 @@
     --side-drawer-width: 90%;
     --about-us-counter-div-height: 150px;
   }
-
-
-
 }
 
 /* 
@@ -337,8 +777,6 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-
-
   :root {
     --paragraph-gap: 0.875rem;
     --header-height: 4.875rem;
@@ -351,11 +789,9 @@
     --title-font-size: 2.25rem;
     --title-font-weight: 400;
 
-
     --header-font-size: 3.156rem;
 
     --font-size-small: 0.844rem;
-
 
     --anchor-link-font-weight: 500;
     --anchor-link-font-size: 0.75rem;
@@ -363,13 +799,7 @@
     --side-drawer-width: 90%;
     --about-us-counter-div-height: 150px;
   }
-
-
-
 }
-
-
-
 
 /* 
 ::-webkit-scrollbar {
@@ -377,10 +807,275 @@
   background-color: #F5F5F5;
 } */
 
-
 @font-face {
-  font-family: 'Wensley';
-  src: url('assets/fonts/WensleyDemo/WensleyDemo.ttf');
+  font-family: "Wensley";
+  src: url("assets/fonts/WensleyDemo/WensleyDemo.ttf");
   font-weight: 300;
   font-style: normal;
+}
+
+.principal-card .card-body .card-title {
+  color: #323131 !important;
+  text-align: center;
+  font-family: "Cera Pro", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.principal-card .card-body img.mb-3 {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+/* new css  start here */
+
+.leadership-component {
+  font-family: Arial, sans-serif;
+}
+
+.proven-leadership {
+  padding: 4rem 0;
+}
+
+.proven-leadership h2,
+.bg-light h2 {
+  color: #003366;
+  font-weight: bold;
+}
+
+.proven-leadership h2 {
+  color: #003366;
+  font-weight: bold;
+  color: #203468;
+  font-family: "Wensley";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -5.5px;
+}
+.proven-leadership p {
+  color: #3b3b3b;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.bg-light {
+  background-color: #eff9fd !important;
+}
+
+.text-primary {
+  color: #0099cc !important;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  color: #003366;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.card.team-leadership {
+  background-color: transparent;
+  border: none;
+}
+
+.team-leadership {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.8); */
+  background-image: url("./assets/images//tl-bg.png");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* align-items: center; */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  /* padding: 82px 82px; */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card-overlay p {
+  margin: 5px 0;
+  color: #fff;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+
+.team-leadership:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay h4 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.card-overlay p {
+  margin: 5px 0;
+}
+
+.card-overlay img {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.card-overlay h4 {
+  margin: 0px 0;
+  text-align: left;
+  color: #fff;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -1.8px;
+  text-transform: capitalize;
+}
+
+.team-leadership {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+}
+
+/* end css */
+
+/* Font size classes */
+
+/* Media query for screens between 1366px and 1440px */
+@media (min-width: 1366px) and (max-width: 1440px) {
+  .card-overlay p {
+    margin: 5px 0;
+    color: #fff;
+    font-family: "Cera Pro" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px !important;
+    text-align: left;
+  }
+
+  .stragicFlex-box p {
+    color: #3b3b3b;
+    text-align: center;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .lead {
+    font-family: "Cera Pro" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 23px !important;
+  }
+
+  .subtitle {
+    font-family: "Cera Pro" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 23px !important;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    color: #333 !important;
+    font-family: "Wensley", sans-serif !important;
+    font-size: 27px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 14px !important;
+    margin-top: 2rem !important;
+  }
+
+  .proven-leadership h2 {
+    font-size: 55px;
+  }
+
+  p.invest-mastery-description.aos-init.aos-animate {
+    color: #fff;
+    font-family: "Cera Pro";
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  p.description {
+    color: #fff;
+    text-align: right;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px !important;
+    padding-left: 47rem;
+  }
+
+  .card-counter {
+    padding-top: 9rem !important;
+  }
+
+  /* Your CSS rules here */
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
+}
+/* Media query for screens between 1499px and 1920px */
+@media (min-width: 1499px) and (max-width: 1920px) {
+  /* Your CSS rules here */
+
+  .card-counter {
+    padding-top: 9rem !important;
+  }
+}
+
+.principal-card .card-body .card-title {
+  color: #323131 !important;
+  text-align: center;
+  font-family: "Cera Pro", sans-serif !important;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+img.social-team-icon {
+  width: 28px !important;
+  margin-top: 1rem;
 }

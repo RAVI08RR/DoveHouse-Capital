@@ -54,11 +54,6 @@
   line-height: 1.2;
 }
 
-.image-container {
-  position: relative;
-  width: 69% !important;
-  margin-top: -12rem;
-}
 @media (min-width: 768px) {
   .main-title {
     font-size: 3.5rem;
@@ -66,5 +61,19 @@
 
   .subtitle {
     font-size: 1rem;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100% !important;
+    margin-top: -12rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 2000px) {
+  .image-container {
+    position: relative;
+    width: 69% !important;
+    margin-top: -12rem;
   }
 }
