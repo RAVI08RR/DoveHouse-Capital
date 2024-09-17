@@ -202,15 +202,14 @@ h2.leadership-card-heading.text-white {
   letter-spacing: -2.5px;
 }
 
-.card.principal-card.h-100.border-0.shadow {
-  background-color: transparent;
-  height: 364px;
+.principal-card {
+  background-color: white;
   border-radius: 0px;
   padding: 80px 20px;
-  flex-shrink: 0;
   /* width: 375px; */
   height: 364px;
   flex-shrink: 0;
+  box-shadow: none !important;
 }
 .principle-card,
 .card-body {
@@ -228,23 +227,25 @@ section.container.principal-sections {
 /* CSS for card container */
 /* CSS for hovering effect */
 
-.card.principal-card.h-100.border-0.shadow:hover {
-  background: #203468; /* Change background color on hover */
+/* .card.principal-card.h-100.border-0.shadow:hover {
+  background: #203468; 
 }
-
 .principal-card:hover .card-body img {
-  filter: brightness(0) invert(1); /* invert color of the image to white */
-}
-
+  filter: brightness(0) invert(1);
+} */
+/* 
 .card.principal-card.h-100.border-0.shadow:hover .card-body .card-title {
-  color: white !important; /* change text color to white */
-}
+  color: white !important; 
+} */
 
+/* .card.principal-card.h-100.border-0.shadow:hover .toggle-icon {
+  color: white;
+} */
 /* Optional: Add transition for smooth effect */
-.principal-card .card-body img,
+/* .principal-card .card-body img,
 .principal-card .card-title {
   transition: color 0.3s ease, filter 0.3s ease;
-}
+} */
 
 p.invest-mastery-description.aos-init.aos-animate {
   color: #fff;
@@ -253,4 +254,8 @@ p.invest-mastery-description.aos-init.aos-animate {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.investment-section-main {
+  margin-top: 2rem;
 }

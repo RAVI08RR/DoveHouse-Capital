@@ -393,11 +393,50 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .card-overlay {
+    display: none !important;
+  }
+
+  .card.principal-card.h-100.border-0.shadow.aos-init.aos-animate {
+    width: 100% !important;
+  }
+
+  .col-md-3.mb-4.card-div-t {
+    width: 100% !important;
+    flex-basis: 100% !important;
+    margin: auto;
+    padding-left: 20px;
+  }
+
+  h2.mb-4.dv-fs-55.dss-fw-400.dv-md-fs-25.aos-init {
+    letter-spacing: -1.8px !important;
+  }
+
+  .card-overlay {
+    position: absolute;
+    display: none;
+  }
+
   .home-container {
     scroll-snap-type: none;
     width: 100%;
     height: 100vh;
     overflow: auto;
+  }
+  .card-top-dss p {
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px !important;
+  }
+
+  .proven-leadership p {
+    color: #3b3b3b;
+
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px !important;
   }
   .content-wrapper {
     text-align: start !important;
@@ -408,7 +447,7 @@ h6 {
     font-family: Wensley, sans-serif;
     font-size: 34px !important;
     font-weight: 400 !important;
-    line-height: 1.2;
+    line-height: 1.1;
     margin-bottom: 1rem;
   }
 
@@ -603,7 +642,13 @@ h6 {
   ##Device = Desktops small
   ##Screen = B/w 1281px to 1441px
 */
-
+@media (min-width: 1200px) and (max-width: 4000px) {
+  .card-overlay {
+    padding: 82px 82px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
 @media (min-width: 1281px) and (max-width: 1441px) {
   .card-overlay {
     padding: 82px 82px;
@@ -622,6 +667,7 @@ h6 {
     font-weight: 400 !important;
     line-height: 14px !important;
     margin-top: 2rem !important;
+    letter-spacing: -1.6px;
   }
   .discription-proven-leadership {
     padding-left: 40px;
@@ -686,7 +732,24 @@ h6 {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 200px) and (max-width: 1024px) {
+  .dss-md-none {
+    display: none;
+  }
+  .dss-p-fs-14 {
+    font-size: 12px !important;
+  }
+  .section-title {
+    letter-spacing: normal !important;
+  }
+
+  p.lg-none.mt-2.pt-2 {
+    font-size: 12px;
+  }
+  /* p {
+    font-size: 12px !important;
+  } */
+
   :root {
     --paragraph-gap: 0.875rem;
     --header-height: 6.875rem;
@@ -815,7 +878,7 @@ h6 {
 }
 
 .principal-card .card-body .card-title {
-  color: #323131 !important;
+  /* color: #323131 !important; */
   text-align: center;
   font-family: "Cera Pro", sans-serif;
   font-size: 13px;
@@ -855,7 +918,7 @@ h6 {
   font-size: 55px;
   font-style: normal;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 55px;
   letter-spacing: -5.5px;
 }
 .proven-leadership p {
@@ -956,7 +1019,7 @@ h4 {
   text-align: left;
   color: #fff;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 30px;
   letter-spacing: -1.8px;
   text-transform: capitalize;
 }
@@ -972,7 +1035,251 @@ h4 {
 /* Font size classes */
 
 /* Media query for screens between 1366px and 1440px */
+
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .main-title-prospertiy {
+    font-size: 80px !important;
+    font-weight: 400 !important;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-family: "Wensley";
+    line-height: 1.2;
+    text-align: end;
+  }
+  .strategic-heading {
+    letter-spacing: -5.5px !important;
+    font-family: "Wensley";
+    font-size: 70px !important;
+    line-height: 80px !important;
+  }
+
+  h1.main-title.heading-title-invesment {
+    font-size: 80px !important;
+    letter-spacing: -7.8px !important;
+  }
+  .principal-sections h2 {
+    font-size: 80px !important;
+    letter-spacing: -7.8px !important;
+  }
+
+  .tabs-content-box {
+    padding: 22px 5rem !important;
+    margin-left: 24px !important;
+  }
+
+  h1.main-title.about-us-heading {
+    font-size: 80px !important;
+    letter-spacing: -8.1px !important;
+  }
+
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    left: 68px !important;
+    width: 639px !important;
+  }
+
+  .stragic-section-bg h2 {
+    letter-spacing: -1.62px !important;
+  }
+
+  .App {
+    overflow: auto;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 500px !important;
+    object-fit: cover;
+  }
+
+  .image-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    left: 12rem;
+    font-family: "Wensley";
+    top: 45% !important;
+  }
+
+  .main-title-prospertiy {
+    letter-spacing: -7.8px !important;
+  }
+
+  .card-top-dss p {
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px !important;
+    font-family: "Cera Pro";
+    text-transform: none;
+  }
+  .team-leadership .img-fluid {
+    height: 513px;
+    object-fit: cover;
+  }
+  .proven-leadership p {
+    color: #3b3b3b;
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px !important;
+    text-align: left;
+    width: 350px;
+  }
+
+  .card-overlay p {
+    margin: 5px 0;
+    color: #fff;
+    font-family: "Cera Pro" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px !important;
+    text-align: left;
+  }
+
+  .stragicFlex-box p {
+    color: #3b3b3b;
+    text-align: center;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .lead {
+    font-family: "Cera Pro" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 23px !important;
+  }
+
+  p.invest-mastery-description.aos-init.aos-animate {
+    padding-left: 7rem;
+  }
+
+  .subtitle {
+    font-family: "Cera Pro" !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+
+  .section-title {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    color: #333 !important;
+    font-family: "Wensley", sans-serif !important;
+    font-size: 27px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 14px !important;
+    margin-top: 2rem !important;
+  }
+
+  .proven-leadership h2 {
+    font-size: 80px !important;
+    letter-spacing: -7.8px !important;
+    line-height: 77px;
+  }
+
+  p.invest-mastery-description.aos-init.aos-animate {
+    color: #fff;
+    font-family: "Cera Pro";
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  p.description {
+    color: #fff;
+    text-align: right;
+    font-family: "Cera Pro", sans-serif;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px !important;
+    padding-left: 47rem;
+  }
+
+  .card-counter {
+    padding-top: 9rem !important;
+    padding-left: 82px !important;
+  }
+
+  /* Your CSS rules here */
+}
+
 @media (min-width: 1366px) and (max-width: 1440px) {
+  .strategic-heading {
+    font-size: 80px !important;
+    letter-spacing: -5.5px !important;
+    line-height: 80px !important;
+  }
+
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+    left: 68px !important;
+    width: 639px !important;
+  }
+
+  .stragic-section-bg h2 {
+    letter-spacing: -1.62px !important;
+  }
+
+  .App {
+    overflow: auto;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 500px !important;
+    object-fit: cover;
+  }
+
+  .image-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    left: 12rem !important;
+    font-family: "Wensley";
+    top: 50% !important;
+  }
+
+  .main-title-prospertiy {
+    letter-spacing: -5.5px !important;
+  }
+
+  .card-top-dss p {
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px !important;
+  }
+  .team-leadership .img-fluid {
+    height: 513px;
+    object-fit: cover;
+  }
+  .proven-leadership p {
+    color: #3b3b3b;
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px !important;
+    text-align: left;
+    width: 350px;
+  }
+
   .card-overlay p {
     margin: 5px 0;
     color: #fff;
@@ -1048,12 +1355,21 @@ h4 {
 
   .card-counter {
     padding-top: 9rem !important;
+    padding-left: 82px !important;
   }
 
   /* Your CSS rules here */
 }
 
-@media (min-width: 1200px) and (max-width: 2000px) {
+@media (min-width: 1200px) and (max-width: 4000px) {
+  .header-logo {
+    width: 236px !important;
+    height: 86px;
+  }
+
+  .lg-none {
+    display: none;
+  }
 }
 /* Media query for screens between 1499px and 1920px */
 @media (min-width: 1499px) and (max-width: 1920px) {
@@ -1065,7 +1381,7 @@ h4 {
 }
 
 .principal-card .card-body .card-title {
-  color: #323131 !important;
+  /* color: #323131 !important; */
   text-align: center;
   font-family: "Cera Pro", sans-serif !important;
   font-size: 13px;
@@ -1078,4 +1394,63 @@ h4 {
 img.social-team-icon {
   width: 28px !important;
   margin-top: 1rem;
+}
+
+section.container.principal-sections {
+  margin-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 0px !important;
+  background-color: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.main-title {
+  letter-spacing: -5.5px;
+}
+
+.contact-us-section {
+  background-color: #f0f9fd;
+  padding-top: 6rem;
+}
+
+h2.section-title.leadership-heading {
+  padding-top: 5rem;
+}
+
+.border-dark,
+.counter-div {
+  border-color: #b7b7b7 !important;
+}
+
+.stragicFlex-box p {
+  font-family: "Cera Pro";
+}
+
+.principal-card {
+  background-color: white;
+  border-radius: 0px;
+  padding: 80px 20px;
+  /* width: 375px; */
+  height: 364px;
+  flex-shrink: 0;
+  box-shadow: none !important;
+}
+
+/* .paragraph-gap {
+  text-transform: math-auto !important;
+  line-height: 20px !important;
+} */
+
+.header-menu-icon {
+  cursor: pointer;
+}
+
+.logo-gif {
+  width: 50%;
+  object-fit: cover;
 }

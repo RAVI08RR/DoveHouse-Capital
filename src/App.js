@@ -56,13 +56,14 @@ import InvesmentLeadership from "./components/InvesmentPage/InvesmentLeadership"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LeadershipComponent from "components/Leadershippage/LeadershipComponent";
+import ContactUs from "components/Contactuspage/ContactUs";
 
 const sideMenu = [
   { name: "HOME", url: "/" },
   { name: "About Us", url: "/about-us" },
   { name: "Investment", url: "/investment" },
   { name: "Leadership", url: "/leadership" },
-  { name: "Contact", url: "#" },
+  { name: "Contact", url: "/contact-us" },
   // Add other menu items as needed
 ];
 
@@ -105,6 +106,7 @@ function App() {
         <Route path="/investment" element={<InvesmentLeadership />} />
 
         <Route path="/leadership" element={<LeadershipComponent />} />
+        <Route path="/Contact-us" element={<ContactUs />} />
         {/* Add more routes for other components */}
       </Routes>
 
