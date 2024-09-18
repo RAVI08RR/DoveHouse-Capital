@@ -179,7 +179,6 @@ import Trandicon from "../../assets/images/Trend.svg";
 import Trandicon2 from "../../assets/images/Portfolio.svg";
 import Trandicon3 from "../../assets/images/Risk.svg";
 import Trandicon4 from "../../assets/images/Transparency.svg";
-import Fade from "react-reveal/Fade";
 
 const InvestmentLeadership = () => {
   const [expandedCard, setExpandedCard] = useState(null);
@@ -207,14 +206,14 @@ const InvestmentLeadership = () => {
       icon: Trandicon3,
       title: "Risk Mitigation",
       description:
-        "We engage cutting edge risk management systems and have them overseen by the most seasoned high caliber people in the industry. We have our own skin in the game and wouldn’t let ourselves down, hence why we won’t let our client’s down either.",
+        "We engage cutting edge risk management systems and have them overseen by the most seasoned high caliber people in the industry. We have our own skin in the game and wouldn't let ourselves down, hence why we won't let our client's down either.",
       delay: 1.8,
     },
     {
       icon: Trandicon4,
       title: "Transparency",
       description:
-        "At any given moment will our investors be able to establish a valuation of their exposure and with short notice, you’d be able to withdraw your capital, should you need to. We engage in no illiquid, esoteric or hard to liquidate assets. We simply do not believe you have to rely on cheap excessive funding to secure high returns (as in real estate or private equity). We have market intelligence, leadership experience, cutting edge systems and brilliant people to secure that transparency, risk and returns are optimized to your benefit.      ",
+        "At any given moment will our investors be able to establish a valuation of their exposure and with short notice, you'd be able to withdraw your capital, should you need to. We engage in no illiquid, esoteric or hard to liquidate assets. We simply do not believe you have to rely on cheap excessive funding to secure high returns (as in real estate or private equity). We have market intelligence, leadership experience, cutting edge systems and brilliant people to secure that transparency, risk and returns are optimized to your benefit.",
       delay: 2,
     },
   ];
@@ -222,11 +221,15 @@ const InvestmentLeadership = () => {
   return (
     <div className="investment-section-main">
       <div className="container p-0">
-        <Fade left duration={600}>
-          <h2 style={{ paddingBottom: "20px" }} className="section-title">
-            INVESTMENT PRINCIPLES
-          </h2>
-        </Fade>
+        <motion.h2
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          style={{ paddingBottom: "20px" }}
+          className="section-title"
+        >
+          INVESTMENT PRINCIPLES
+        </motion.h2>
       </div>
       <div className="container-fuild" style={{ backgroundColor: "#eff9fd" }}>
         <section
@@ -234,10 +237,10 @@ const InvestmentLeadership = () => {
           style={{ paddingBottom: "0px" }}
         >
           <div className="container">
-            <h1
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine "
+            <motion.h1
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               style={{ letterSpacing: "-4.8px" }}
               className="main-title heading-title-invesment"
             >
@@ -249,24 +252,28 @@ const InvestmentLeadership = () => {
               >
                 Returns
               </span>
-            </h1>
-            <p className="subtitle dss-p-fs-14">
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="subtitle dss-p-fs-14"
+            >
               We combine a high level of expertise and experience across all
               functions and leverage well-defined and rigorous investment
               approaches built on core principles. Across our three core
               investment strategies we have one singular focus: delivering
               optimal and accessible risk-adjusted returns for our investors.
-            </p>
+            </motion.p>
           </div>
         </section>
 
         <div className="container-fuild main-container-section-in p-0">
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
             className="main-leadership"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            data-aos-delay="100"
-            data-aos-easing="ease-in-out"
             style={{
               backgroundImage: `url(${Investmenturlbg})`,
               height: "500px",
@@ -274,11 +281,11 @@ const InvestmentLeadership = () => {
               backgroundSize: "cover",
             }}
           >
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
               className="card-counter mt-5"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="3000"
             >
               <div className="card leadership-card">
                 <h2 className="leadership-card-heading text-white">6000</h2>
@@ -298,21 +305,21 @@ const InvestmentLeadership = () => {
                   Optimal Risk-Adjusted Returns
                 </p>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
 
         <section className="container principal-sections">
-          <h2
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-easing="ease-in-sine"
+          <motion.h2
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
           >
             OUR CORE{" "}
             <span className="text" style={{ color: "#33B9EA" }}>
               PRINCIPLES
             </span>
-          </h2>
+          </motion.h2>
           <div className="row">
             {principleCards.map((card, index) => (
               <PrincipleCard
@@ -341,6 +348,7 @@ const PrincipleCard = ({
   description,
   isExpanded,
   toggleExpand,
+  delay,
 }) => {
   const cardStyle = isExpanded ? { background: "#203468", color: "white" } : {};
   const iconStyle = isExpanded ? { color: "white" } : { color: "#323131" };
@@ -349,12 +357,14 @@ const PrincipleCard = ({
     : { filter: "none" };
 
   return (
-    <div className="col-md-3 mb-4 card-div-t">
+    <motion.div
+      className="col-md-3 mb-4 card-div-t"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay }}
+    >
       <motion.div
         className={`card principal-card h-100 border-0 shadow`}
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="3000"
         onClick={() => toggleExpand(index)}
         style={{
           cursor: "pointer",
@@ -362,6 +372,8 @@ const PrincipleCard = ({
           width: "100%",
           overflow: "hidden",
         }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
         <div className="card-body">
           <img src={icon} alt={title} className="mb-3" style={iconStyleimg} />
@@ -369,17 +381,13 @@ const PrincipleCard = ({
             {title}
           </h5>
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={{ opacity: 0, height: 0 }}
             animate={{
               opacity: isExpanded ? 1 : 0,
-              height: isExpanded ? "auto" : "0px",
+              height: isExpanded ? "auto" : 0,
             }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-            style={{
-              maxHeight: isExpanded ? "100px" : "0px",
-              overflow: "hidden",
-              transition: "max-height 0.6s ease",
-            }}
+            transition={{ duration: 0.3 }}
+            style={{ overflow: "hidden" }}
           >
             <p
               className="card-title dss-p-fs-14"
@@ -393,7 +401,7 @@ const PrincipleCard = ({
           </div>
         </div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 
